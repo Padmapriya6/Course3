@@ -1,7 +1,0 @@
-
-CODEBOOK
-
-A code book is a simple readble file which describes the variables, the data and any transformation or work that was performed to clean up the data.
-
-Here the code book can be accessed and the contents of it can be fetched from the Markdown file, "codebook.md"
-         

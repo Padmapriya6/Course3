@@ -1,0 +1,11 @@
+
+This project contains the following contents :
+
+1. A markdown file, "codebook.md"
+2. A markdown file, "readme.md"
+3. A R programming script , "run_analysis.R" file to execute the code.
+4. A final output file, a clean data set called "Tidy dataset final.txt" 
+
+
+
+         
