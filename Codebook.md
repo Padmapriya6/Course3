@@ -1,6 +1,6 @@
 CODEBOOK
 
-A code book codebook.md which describes the variables, the data, and any transformations or work that performed to clean up the data.
+A code book is a simple readable file, codebook.md which describes the variables, the data and any transformation or work that was performed to clean up the data.
 
 The run\_analysis.R script that performs all the required tasks to create the tidy data set.
 
