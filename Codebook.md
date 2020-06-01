@@ -79,82 +79,86 @@ The variables remaining are mentioned in the final section. Before checking it, 
 
 The variables are listed below:
 
-- tBodyAccMeanX
-- tBodyAccMeanY
-- tBodyAccMeanZ
-- tBodyAccStdX
-- tBodyAccStdY
-- tBodyAccStdZ
-- tGravityAccMeanX
-- tGravityAccMeanY
-- tGravityAccMeanZ
-- tGravityAccStdX
-- tGravityAccStdY
-- tGravityAccStdZ
-- tBodyAccJerkMeanX
-- tBodyAccJerkMeanY
-- tBodyAccJerkMeanZ
-- tBodyAccJerkStdX
-- tBodyAccJerkStdY
-- tBodyAccJerkStdZ
-- tBodyGyroMeanX
-- tBodyGyroMeanY
-- tBodyGyroMeanZ
-- tBodyGyroStdX
-- tBodyGyroStdY
-- tBodyGyroStdZ
-- tBodyGyroJerkMeanX
-- tBodyGyroJerkMeanY
-- tBodyGyroJerkMeanZ
-- tBodyGyroJerkStdX
-- tBodyGyroJerkStdY
-- tBodyGyroJerkStdZ
-- tBodyAccMagMean
-- tBodyAccMagStd
-- tGravityAccMagMean
-- tGravityAccMagStd
-- tBodyAccJerkMagMean
-- tBodyAccJerkMagStd
-- tBodyGyroMagMean
-- tBodyGyroMagStd
-- tBodyGyroJerkMagMean
-- tBodyGyroJerkMagStd
-- fBodyAccMeanX
-- fBodyAccMeanY
-- fBodyAccMeanZ
-- fBodyAccStdX
-- fBodyAccStdY
-- fBodyAccStdZ
-- fBodyAccMeanFreqX
-- fBodyAccMeanFreqY
-- fBodyAccMeanFreqZ
-- fBodyAccJerkMeanX
-- fBodyAccJerkMeanY
-- fBodyAccJerkMeanZ
-- fBodyAccJerkStdX
-- fBodyAccJerkStdY
-- fBodyAccJerkStdZ
-- fBodyAccJerkMeanFreqX
-- fBodyAccJerkMeanFreqY
-- fBodyAccJerkMeanFreqZ
-- fBodyGyroMeanX
-- fBodyGyroMeanY
-- fBodyGyroMeanZ
-- fBodyGyroStdX
-- fBodyGyroStdY
-- fBodyGyroStdZ
-- fBodyGyroMeanFreqX
-- fBodyGyroMeanFreqY
-- fBodyGyroMeanFreqZ
-- fBodyAccMagMean
-- fBodyAccMagStd
-- fBodyAccMagMeanFreq
-- fBodyBodyAccJerkMagMean
-- fBodyBodyAccJerkMagStd
-- fBodyBodyAccJerkMagMeanFreq
-- fBodyBodyGyroMagMean
-- fBodyBodyGyroMagStd
-- fBodyBodyGyroMagMeanFreq
-- fBodyBodyGyroJerkMagMean
-- fBodyBodyGyroJerkMagStd
-- fBodyBodyGyroJerkMagMeanFreq
+|COLUMN.INDEX|VARIABLE                                         |TYPE       |Description                                                                                                                                           |            
+|------------|-------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|            
+|1           |Subject                                          |Categorical|Subject identifier. Positive (+) integer number from 1 to N, where N is the number of Subjects                                                        |            
+|2           |Activity                                         |Categorical|ACTIVITY performed by each subject. The activities performed are: 'LAYING', 'SITTING', 'STANDING', 'WALKING', 'WALKING_DOWNSTAIRS', 'WALKING_UPSTAIRS'|
+|3           |TimeBodyAccelerometerMean...X                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometer ...X)                                                                                |            
+|4           |TimeBodyAccelerometerMean...Y                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometer ...Y)                                                                                |            
+|5           |TimeBodyAccelerometerMean...Z                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometer ...Z)                                                                                |            
+|6           |TimeBodyAccelerometerSTD...X                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometer ...X)                                                                                 |            
+|7           |TimeBodyAccelerometerSTD...Y                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometer ...Y)                                                                                 |            
+|8           |TimeBodyAccelerometerSTD...Z                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometer ...Z)                                                                                 |            
+|9           |TimeGravityAccelerometerMean...X                 |numeric    |Calculated MEAN of the MEAN(Time meassured for GravityAccelerometer ...X)                                                                             |            
+|10          |TimeGravityAccelerometerMean...Y                 |numeric    |Calculated MEAN of the MEAN(Time meassured for GravityAccelerometer ...Y)                                                                             |            
+|11          |TimeGravityAccelerometerMean...Z                 |numeric    |Calculated MEAN of the MEAN(Time meassured for GravityAccelerometer ...Z)                                                                             |            
+|12          |TimeGravityAccelerometerSTD...X                  |numeric    |Calculated MEAN of the STD(Time meassured for GravityAccelerometer ...X)                                                                              |            
+|13          |TimeGravityAccelerometerSTD...Y                  |numeric    |Calculated MEAN of the STD(Time meassured for GravityAccelerometer ...Y)                                                                              |            
+|14          |TimeGravityAccelerometerSTD...Z                  |numeric    |Calculated MEAN of the STD(Time meassured for GravityAccelerometer ...Z)                                                                              |            
+|15          |TimeBodyAccelerometerJerkMean...X                |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometerJerk ...X)                                                                            |            
+|16          |TimeBodyAccelerometerJerkMean...Y                |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometerJerk ...Y)                                                                            |            
+|17          |TimeBodyAccelerometerJerkMean...Z                |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometerJerk ...Z)                                                                            |            
+|18          |TimeBodyAccelerometerJerkSTD...X                 |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometerJerk ...X)                                                                             |            
+|19          |TimeBodyAccelerometerJerkSTD...Y                 |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometerJerk ...Y)                                                                             |            
+|20          |TimeBodyAccelerometerJerkSTD...Z                 |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometerJerk ...Z)                                                                             |            
+|21          |TimeBodyGyroscopeMean...X                        |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscope ...X)                                                                                    |            
+|22          |TimeBodyGyroscopeMean...Y                        |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscope ...Y)                                                                                    |            
+|23          |TimeBodyGyroscopeMean...Z                        |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscope ...Z)                                                                                    |            
+|24          |TimeBodyGyroscopeSTD...X                         |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscope ...X)                                                                                     |            
+|25          |TimeBodyGyroscopeSTD...Y                         |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscope ...Y)                                                                                     |            
+|26          |TimeBodyGyroscopeSTD...Z                         |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscope ...Z)                                                                                     |            
+|27          |TimeBodyGyroscopeJerkMean...X                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscopeJerk ...X)                                                                                |            
+|28          |TimeBodyGyroscopeJerkMean...Y                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscopeJerk ...Y)                                                                                |            
+|29          |TimeBodyGyroscopeJerkMean...Z                    |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscopeJerk ...Z)                                                                                |            
+|30          |TimeBodyGyroscopeJerkSTD...X                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscopeJerk ...X)                                                                                 |            
+|31          |TimeBodyGyroscopeJerkSTD...Y                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscopeJerk ...Y)                                                                                 |            
+|32          |TimeBodyGyroscopeJerkSTD...Z                     |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscopeJerk ...Z)                                                                                 |            
+|33          |TimeBodyAccelerometerMagnitudeMean..             |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometerMagnitude ..)                                                                         |            
+|34          |TimeBodyAccelerometerMagnitudeSTD..              |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometerMagnitude ..)                                                                          |            
+|35          |TimeGravityAccelerometerMagnitudeMean..          |numeric    |Calculated MEAN of the MEAN(Time meassured for GravityAccelerometerMagnitude ..)                                                                      |            
+|36          |TimeGravityAccelerometerMagnitudeSTD..           |numeric    |Calculated MEAN of the STD(Time meassured for GravityAccelerometerMagnitude ..)                                                                       |            
+|37          |TimeBodyAccelerometerJerkMagnitudeMean..         |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyAccelerometerJerkMagnitude ..)                                                                     |            
+|38          |TimeBodyAccelerometerJerkMagnitudeSTD..          |numeric    |Calculated MEAN of the STD(Time meassured for BodyAccelerometerJerkMagnitude ..)                                                                      |            
+|39          |TimeBodyGyroscopeMagnitudeMean..                 |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscopeMagnitude ..)                                                                             |            
+|40          |TimeBodyGyroscopeMagnitudeSTD..                  |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscopeMagnitude ..)                                                                              |            
+|41          |TimeBodyGyroscopeJerkMagnitudeMean..             |numeric    |Calculated MEAN of the MEAN(Time meassured for BodyGyroscopeJerkMagnitude ..)                                                                         |            
+|42          |TimeBodyGyroscopeJerkMagnitudeSTD..              |numeric    |Calculated MEAN of the STD(Time meassured for BodyGyroscopeJerkMagnitude ..)                                                                          |            
+|43          |FrequencyBodyAccelerometerMean...X               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer ...X)                                                                           |            
+|44          |FrequencyBodyAccelerometerMean...Y               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer ...Y)                                                                           |            
+|45          |FrequencyBodyAccelerometerMean...Z               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer ...Z)                                                                           |            
+|46          |FrequencyBodyAccelerometerSTD...X                |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometer ...X)                                                                            |            
+|47          |FrequencyBodyAccelerometerSTD...Y                |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometer ...Y)                                                                            |            
+|48          |FrequencyBodyAccelerometerSTD...Z                |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometer ...Z)                                                                            |            
+|49          |FrequencyBodyAccelerometerMeanFreq...X           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer Freq...X)                                                                       |            
+|50          |FrequencyBodyAccelerometerMeanFreq...Y           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer Freq...Y)                                                                       |            
+|51          |FrequencyBodyAccelerometerMeanFreq...Z           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometer Freq...Z)                                                                       |            
+|52          |FrequencyBodyAccelerometerJerkMean...X           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk ...X)                                                                       |            
+|53          |FrequencyBodyAccelerometerJerkMean...Y           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk ...Y)                                                                       |            
+|54          |FrequencyBodyAccelerometerJerkMean...Z           |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk ...Z)                                                                       |            
+|55          |FrequencyBodyAccelerometerJerkSTD...X            |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometerJerk ...X)                                                                        |            
+|56          |FrequencyBodyAccelerometerJerkSTD...Y            |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometerJerk ...Y)                                                                        |            
+|57          |FrequencyBodyAccelerometerJerkSTD...Z            |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometerJerk ...Z)                                                                        |            
+|58          |FrequencyBodyAccelerometerJerkMeanFreq...X       |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk Freq...X)                                                                   |            
+|59          |FrequencyBodyAccelerometerJerkMeanFreq...Y       |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk Freq...Y)                                                                   |            
+|60          |FrequencyBodyAccelerometerJerkMeanFreq...Z       |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerk Freq...Z)                                                                   |            
+|61          |FrequencyBodyGyroscopeMean...X                   |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope ...X)                                                                               |            
+|62          |FrequencyBodyGyroscopeMean...Y                   |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope ...Y)                                                                               |            
+|63          |FrequencyBodyGyroscopeMean...Z                   |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope ...Z)                                                                               |            
+|64          |FrequencyBodyGyroscopeSTD...X                    |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyGyroscope ...X)                                                                                |            
+|65          |FrequencyBodyGyroscopeSTD...Y                    |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyGyroscope ...Y)                                                                                |            
+|66          |FrequencyBodyGyroscopeSTD...Z                    |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyGyroscope ...Z)                                                                                |            
+|67          |FrequencyBodyGyroscopeMeanFreq...X               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope Freq...X)                                                                           |            
+|68          |FrequencyBodyGyroscopeMeanFreq...Y               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope Freq...Y)                                                                           |            
+|69          |FrequencyBodyGyroscopeMeanFreq...Z               |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscope Freq...Z)                                                                           |            
+|70          |FrequencyBodyAccelerometerMagnitudeMean..        |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerMagnitude ..)                                                                    |            
+|71          |FrequencyBodyAccelerometerMagnitudeSTD..         |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometerMagnitude ..)                                                                     |            
+|72          |FrequencyBodyAccelerometerMagnitudeMeanFreq..    |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerMagnitude Freq..)                                                                |            
+|73          |FrequencyBodyAccelerometerJerkMagnitudeMean..    |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerkMagnitude ..)                                                                |            
+|74          |FrequencyBodyAccelerometerJerkMagnitudeSTD..     |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyAccelerometerJerkMagnitude ..)                                                                 |            
+|75          |FrequencyBodyAccelerometerJerkMagnitudeMeanFreq..|numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyAccelerometerJerkMagnitude Freq..)                                                            |            
+|76          |FrequencyBodyGyroscopeMagnitudeMean..            |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscopeMagnitude ..)                                                                        |            
+|77          |FrequencyBodyGyroscopeMagnitudeSTD..             |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyGyroscopeMagnitude ..)                                                                         |            
+|78          |FrequencyBodyGyroscopeMagnitudeMeanFreq..        |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscopeMagnitude Freq..)                                                                    |            
+|79          |FrequencyBodyGyroscopeJerkMagnitudeMean..        |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscopeJerkMagnitude ..)                                                                    |            
+|80          |FrequencyBodyGyroscopeJerkMagnitudeSTD..         |numeric    |Calculated MEAN of the STD(Frequency meassured for BodyGyroscopeJerkMagnitude ..)                                                                     |            
+|81          |FrequencyBodyGyroscopeJerkMagnitudeMeanFreq..    |numeric    |Calculated MEAN of the MEAN(Frequency meassured for BodyGyroscopeJerkMagnitude Freq..)    
